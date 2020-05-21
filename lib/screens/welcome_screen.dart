@@ -11,19 +11,19 @@ class WelcomeScreen extends StatefulWidget {
 
 class _WelcomeScreenState extends State<WelcomeScreen>
     with SingleTickerProviderStateMixin {
-  // AnimationController _controller;
-  //Animation _animation;
+  AnimationController _controller;
+  Animation _animation;
 
   @override
   void initState() {
-//    _controller =
-//        AnimationController(vsync: this, duration: Duration(seconds: 2));
-//    _animation = CurvedAnimation(parent: _controller, curve: Curves.decelerate);
-//
-//    _controller.forward();
-//    _controller.addListener(() {
-//      setState(() {});
-//    });
+    _controller =
+        AnimationController(vsync: this, duration: Duration(seconds: 2));
+    _animation = CurvedAnimation(parent: _controller, curve: Curves.decelerate);
+
+    _controller.forward();
+    _controller.addListener(() {
+      setState(() {});
+    });
   }
 
   @override
